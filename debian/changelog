@@ -1,0 +1,30 @@
+skindesigner-logos (0.0.1.git20141201.2141-0frodo0~trusty) trusty; urgency=low
+
+  * New upstream snapshot (commit 110f600), build 0006
+
+ -- Frodo <frodo.vdr@gmx.net>  Mon, 01 Dec 2014 22:41:26 +0100
+
+skindesigner-logos (0.0.1.git20141201.2139-0frodo0~precise) precise; urgency=low
+
+  * New upstream snapshot (commit 110f600), build 0006
+
+ -- Frodo <frodo.vdr@gmx.net>  Mon, 01 Dec 2014 22:40:15 +0100
+
+skindesigner-logos (0.0.1.git20141130.2201-0frodo0~trusty) trusty; urgency=low
+
+  * New upstream snapshot (commit 0ca6d82), build 0000
+
+ -- Frodo <frodo.vdr@gmx.net>  Sun, 30 Nov 2014 23:04:37 +0100
+
+skindesigner-logos (0.0.1.git20141130.2143-0frodo0~precise) precise; urgency=low
+
+  * New upstream snapshot (commit 0ca6d82), build 0000
+
+ -- Frodo <frodo.vdr@gmx.net>  Sun, 30 Nov 2014 22:46:17 +0100
+
+skindesigner-logos (0.0.1.git20141130.2135-0frodo0~precise) precise; urgency=low
+
+  * New upstream snapshot (commit 0ca6d82), build 0000
+
+ -- Frodo <frodo.vdr@gmx.net>  Sun, 30 Nov 2014 22:37:45 +0100
+
