@@ -1,3 +1,15 @@
+skindesigner-logos (0.0.1.git20141209.1759-0frodo0~trusty) trusty; urgency=low
+
+  * New upstream snapshot (commit 631bc88), build 0014
+
+ -- Frodo <frodo.vdr@gmx.net>  Tue, 09 Dec 2014 19:00:05 +0100
+
+skindesigner-logos (0.0.1.git20141209.1758-0frodo0~precise) precise; urgency=low
+
+  * New upstream snapshot (commit 631bc88), build 0014
+
+ -- Frodo <frodo.vdr@gmx.net>  Tue, 09 Dec 2014 18:58:43 +0100
+
 skindesigner-logos (0.0.1.git20141207.1032-0frodo0~trusty) trusty; urgency=low
 
   * New upstream snapshot (commit 92bbb59), build 0013
