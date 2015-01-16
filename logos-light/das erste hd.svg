@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="724.65533"
+   height="339.86157"
+   id="svg3295"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   version="1.0"
+   sodipodi:docname="Das Erste HD Logo.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs3297">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective3303" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.90552717"
+     inkscape:cx="362.32767"
+     inkscape:cy="169.93079"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1024"
+     inkscape:window-height="749"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4" />
+  <metadata
+     id="metadata3300">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(18.487921,-316.71709)">
+    <g
+       id="g3288"
+       transform="matrix(0.6039635,0,0,0.6039635,-126.805,268.75172)">
+      <g
+         style="fill:#003257;fill-opacity:1"
+         transform="translate(-0.8544956,3.3650517e-6)"
+         id="g3267">
+        <path
+           style="fill:#003257;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="M 1103.3125,190.59375 L 1103.3125,539.84375 C 1103.3125,539.84375 1165.8914,539.84375 1192.7188,539.84375 C 1354.9575,539.84375 1380.0312,457.30696 1380.0312,364 C 1380.0312,279.7335 1353.739,190.59375 1192.7188,190.59375 C 1165.8914,190.59376 1103.3125,190.59375 1103.3125,190.59375 z M 1192.7188,265.75 C 1192.7188,265.75 1210.1783,265.75001 1217.6562,265.75 C 1274.833,265.75 1290.6251,319.86217 1290.625,366.59375 C 1290.625,416.22372 1274.1001,468.25 1221.9375,468.25 C 1213.1778,468.25 1192.7187,468.25 1192.7188,468.25 L 1192.7188,265.75 z"
+           id="path2481" />
+        <path
+           style="opacity:1;fill:#003257;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 804.8125,190.59375 L 804.8125,539.84375 L 893.03125,539.84375 L 893.03125,393.625 L 996.8125,393.625 L 996.8125,539.84375 L 1085.0312,539.84375 L 1085.0312,190.59375 L 996.8125,190.59375 L 996.8125,316.28125 L 893.03125,316.28125 L 893.03125,190.59375 L 804.8125,190.59375 z"
+           id="rect2490" />
+      </g>
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path3277"
+         d="M 288.28432,292.46524 L 572.26744,190.46212 L 572.26744,471.63307 L 382.54255,537.77832 L 382.54255,328.71841 L 288.28432,361.70019 L 288.28432,292.46524 z"
+         style="fill:#003257;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         id="path3279"
+         d="M 460.71875,79.417663 C 305.40674,79.417663 179.34375,205.48064 179.34375,360.79266 C 179.34375,516.10467 305.40673,642.13638 460.71875,642.13641 C 616.03076,642.13641 742.0937,516.10467 742.0937,360.79266 C 742.0937,205.48065 616.03076,79.417663 460.71875,79.417663 z M 459.8125,116.88641 C 594.1146,116.88641 703.125,225.8968 703.125,360.19891 C 703.125,494.50103 594.11461,603.48016 459.8125,603.48016 C 325.51038,603.48016 216.5,494.50102 216.5,360.19891 C 216.49999,225.8968 325.51039,116.88641 459.8125,116.88641 z"
+         style="opacity:1;fill:#003257;fill-opacity:1;stroke:none;stroke-width:4.06815386;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
