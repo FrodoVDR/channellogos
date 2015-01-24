@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="sky bundesliga hd 1.svg">
+   sodipodi:docname="sky bundesliga hd 5.svg">
   <defs
      id="defs4">
     <clipPath
@@ -81,9 +81,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.14"
-     inkscape:cx="459.57153"
-     inkscape:cy="-66.7066"
+     inkscape:zoom="3.2244069"
+     inkscape:cx="599.63905"
+     inkscape:cy="-33.21899"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -246,71 +246,72 @@
            sodipodi:nodetypes="ccccsscccccccssccc" />
       </g>
     </g>
+    <path
+       sodipodi:nodetypes="cscsccc"
+       inkscape:connector-curvature="0"
+       d="m 765.85462,969.375 c 0,0 12.9388,0 12.9388,12.9388 l 0,57.1544 c 0,0 0,12.9068 -12.9388,12.9068 l -149.75265,0 0,-83 z"
+       style="fill:#221f20;fill-opacity:1;stroke:none"
+       id="path22548-1-0" />
     <g
-       transform="translate(25.684582,275.72333)"
-       id="layer1-44"
-       inkscape:label="Ebene 1">
+       transform="matrix(20.141613,0,0,-20.141613,139.82251,1320.2289)"
+       id="g22178-6" />
+    <g
+       id="g30823-1"
+       transform="matrix(30.588261,0,0,30.588261,-13140.859,-29783.033)">
       <path
-         id="path22548-1-0"
-         style="fill:#221f20;fill-opacity:1;stroke:none"
-         d="m 740.17004,693.65167 c 0,0 12.9388,0 12.9388,12.9388 l 0,57.1544 c 0,0 0,12.9068 -12.9388,12.9068 l -149.75265,0 0,-83 z"
          inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cscsccc" />
+         d="m 451.37383,1007.4212 0,-0.5437 -0.8175,0 0,0.5437 -0.245,0 0,-1.3325 0.245,0 0,0.545 0.8175,0 0,-0.545 0.24375,0 0,1.3325 -0.24375,0 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path22754-8" />
       <g
-         id="g22178-6"
-         transform="matrix(20.141613,0,0,-20.141613,114.13793,1044.5056)" />
-      <g
-         transform="matrix(30.588261,0,0,30.588261,-13166.544,-30058.756)"
-         id="g30823-1">
-        <path
-           id="path22754-8"
-           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           d="m 451.37383,1007.4212 0,-0.5437 -0.8175,0 0,0.5437 -0.245,0 0,-1.3325 0.245,0 0,0.545 0.8175,0 0,-0.545 0.24375,0 0,1.3325 -0.24375,0 z"
-           inkscape:connector-curvature="0" />
-        <g
-           transform="matrix(1.25,0,0,-1.25,446.02795,1015.1029)"
-           id="g22756-4">
-          <path
-             id="path22758-96"
-             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             d="m 4.7055084,7.2108846 0.708,0 c 0.198,0 0.36,-0.161 0.36,-0.361 l 0,-0.344 c 0,-0.199 -0.162,-0.361 -0.36,-0.361 l -0.708,0 0,1.066 z m 0.197,-0.87 0.511,0 c 0.09,0 0.164,0.076 0.164,0.165 l 0,0.344 c 0,0.09 -0.074,0.166 -0.164,0.166 l -0.511,0 0,-0.675"
-             inkscape:connector-curvature="0" />
-        </g>
-      </g>
-      <g
-         id="g22258"
-         transform="matrix(1.25,0,0,-1.25,535.13267,1027.9077)">
+         id="g22756-4"
+         transform="matrix(1.25,0,0,-1.25,446.02795,1015.1029)">
         <path
            inkscape:connector-curvature="0"
-           d="m 152.23079,217.33593 0,25.19904 -10.56379,-4.31354 0,6.60237 12.41246,4.90776 c 0.2861,0.15405 0.66023,0.19807 1.03437,0.19807 0.61622,0 1.27646,-0.19807 1.80465,-0.52819 l -0.044,0.066 c 0.8583,-0.63823 1.32047,-1.43051 1.32047,-2.46489 l 0,-29.66664 -5.96414,0"
+           d="m 4.7055084,7.2108846 0.708,0 c 0.198,0 0.36,-0.161 0.36,-0.361 l 0,-0.344 c 0,-0.199 -0.162,-0.361 -0.36,-0.361 l -0.708,0 0,1.066 z m 0.197,-0.87 0.511,0 c 0.09,0 0.164,0.076 0.164,0.165 l 0,0.344 c 0,0.09 -0.074,0.166 -0.164,0.166 l -0.511,0 0,-0.675"
            style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           id="path22260" />
-      </g>
-      <g
-         style="fill:#881f16;fill-opacity:1"
-         id="g30867"
-         transform="matrix(27.563035,0,0,-27.563035,-192.42893,8124.1244)">
-        <g
-           style="fill:#881f16;fill-opacity:1"
-           transform="translate(14.1572,257.3031)"
-           id="g22514" />
-        <g
-           style="fill:#881f16;fill-opacity:1"
-           transform="translate(15.7563,257.7895)"
-           id="g22518" />
-        <g
-           style="fill:#881f16;fill-opacity:1"
-           transform="translate(16.3524,258.2739)"
-           id="g22522" />
-        <g
-           style="fill:#881f16;fill-opacity:1"
-           transform="translate(18.4747,257.7981)"
-           id="g22526" />
-        <g
-           style="fill:#881f16;fill-opacity:1"
-           transform="translate(19.8866,258.517)"
-           id="g22530" />
+           id="path22758-96" />
       </g>
     </g>
+    <g
+       transform="matrix(27.563035,0,0,-27.563035,-166.74435,8399.8477)"
+       id="g30867"
+       style="fill:#881f16;fill-opacity:1">
+      <g
+         id="g22514"
+         transform="translate(14.1572,257.3031)"
+         style="fill:#881f16;fill-opacity:1" />
+      <g
+         id="g22518"
+         transform="translate(15.7563,257.7895)"
+         style="fill:#881f16;fill-opacity:1" />
+      <g
+         id="g22522"
+         transform="translate(16.3524,258.2739)"
+         style="fill:#881f16;fill-opacity:1" />
+      <g
+         id="g22526"
+         transform="translate(18.4747,257.7981)"
+         style="fill:#881f16;fill-opacity:1" />
+      <g
+         id="g22530"
+         transform="translate(19.8866,258.517)"
+         style="fill:#881f16;fill-opacity:1" />
+    </g>
+    <g
+       id="g3062"
+       transform="matrix(0.94016303,0,0,1,358.92875,-207.58463)" />
+    <text
+       xml:space="preserve"
+       style="font-size:75.76113129px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="538.2243"
+       y="1385.0686"
+       id="text3068"
+       sodipodi:linespacing="125%"
+       transform="scale(1.3421217,0.74508892)"><tspan
+         sodipodi:role="line"
+         id="tspan3070"
+         x="538.2243"
+         y="1385.0686">6</tspan></text>
   </g>
 </svg>
