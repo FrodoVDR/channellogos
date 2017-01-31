@@ -9,6 +9,6 @@ Homepage: https://github.com/FrodoVDR/svg-channellogos.git
 
 Package: skindesigner-logos
 Architecture: all
-Depends: ${misc:Depends}, vdr-plugin-skindesigner (>= 0.1.2~)
+Depends: ${misc:Depends}
 Description: svg logos for skindesigner
 

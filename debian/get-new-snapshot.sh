@@ -1,80 +1,56 @@
-echo Downloading latest from git repository...
+#!/bin/bash
 # set -x
 
-BUILDDISTRIBUTION=$1
-GITSOURCE='https://github.com/FrodoVDR/svg-channellogos.git'
+DISTRIBUTION=trusty
+GITSOURCE='https://github.com/FrodoVDR/channellogos.git'
+BUILDPREFIX=yavdr
+FORCEVERSION=''
 
-DEB_SOURCE_PACKAGE=`egrep '^Source: ' debian/control | cut -f 2 -d ' '`
-DISTRIBUTION=`dpkg-parsechangelog | grep ^Distribution: | sed -e 's/^Distribution:\s*//'`
-VERSION_UPSTREAM=`dpkg-parsechangelog | grep ^Version: | sed -e 's/^Version:\s*//' -e s/-[^-]*$// -e s/\.git.*//`
-GIT_SHA_OLD=`git show --pretty=format:"%h" --quiet | head -1 || true`
+DEB_SOURCE_PACKAGE=$(egrep '^Source: ' debian/control | cut -f 2 -d ' ')
 
-if [ -d ${DEB_SOURCE_PACKAGE} ] ; then
-        rm -rf ${DEB_SOURCE_PACKAGE}
+PKGVERSION=$(dpkg-parsechangelog | sed -n 's/^Version: \(.*\)-.*/\1/p')
+SUBVERSION=$(dpkg-parsechangelog | grep ^Version: | sed -e 's/^Version:\s*//' -e 's/~.*//g' | awk -F'-' '{ print $4 }' | sed -e "s/${BUILDPREFIX}.*//g")
+if [ "$SUBVERSION" = '' ] ; then
+	SUBVERSION=$(dpkg-parsechangelog | grep ^Version: | sed -e 's/^Version:\s*//' -e 's/~.*//g' | awk -F'-' '{ print $2 }' | sed -e "s/${BUILDPREFIX}.*//g")
 fi
 
-if [ -d ".git" ] ; then
-	git pull
-fi
+git pull origin
+CHANGES=$(git log --pretty=format:"%h: %s" -1)
 
-VERSION_DATE=`/bin/date --utc +%0Y%0m%0d`
-GITHEAD=`git rev-list HEAD | wc -l`
-GITBUILD="$(printf '%04d' "$GITHEAD")"
-BUILD=`/bin/date --utc +%H%M`
+UPSTREAMVERSION="$(git describe --tags)"
 
-VERSION_FULL="${VERSION_UPSTREAM}.git${VERSION_DATE}.${BUILD}"
-
-git clone --depth 1 ${GITSOURCE} ${DEB_SOURCE_PACKAGE}
-
-cd ${DEB_SOURCE_PACKAGE}
-GIT_SHA=`git show --pretty=format:"%h" --quiet | head -1 || true`
-cd ..
-
-CHKMAKE="/tmp/${DEB_SOURCE_PACKAGE}.make"
-CHKFILE="/tmp/${DEB_SOURCE_PACKAGE}.exist"
-[ -f ${CHKFILE} ] && rm ${CHKFILE}
-	
-if [ "x${GIT_SHA_OLD}" == "x${GIT_SHA}" ] ; then
-        echo "Keine neue Version von ${DEB_SOURCE_PACKAGE} gefunden: ${GIT_SHA_OLD} = ${GIT_SHA}" | tee ${CHKFILE}
-	if [ -f ${CHKMAKE} ] ; then
-#		exit 1
-		echo
-	fi
-fi
-
-if [ $DISTRIBUTION != 'trusty' ] ; then
-        DISTRIBUTION='trusty'
+GIT_SHA=$(git show --pretty=format:"%h" --quiet | head -1 || true)
+test=$(grep ${GIT_SHA} debian/changelog)
+if [ $? -eq 0 ] ; then
+        SUBVERSION=$((SUBVERSION +1))
 else
-        DISTRIBUTION='precise'
+        SUBVERSION=0
 fi
 
-if [ ! -z $BUILDDISTRIBUTION ] ; then
-        DISTRIBUTION=$BUILDDISTRIBUTION
+NEWVERSION=${UPSTREAMVERSION}-${SUBVERSION}${BUILDPREFIX}0~${DISTRIBUTION}
+
+if [ ! -f ../${DEB_SOURCE_PACKAGE}_${VERSION_FULL}.orig.tar.xz ] ; then
+        test=$(git config -l | grep xz)
+        if [ $? -ne 0 ] ; then
+                git config tar.tar.xz.command "xz -c"
+        fi
+        git archive --format=tar.xz --prefix=${DEB_SOURCE_PACKAGE}-${UPSTREAMVERSION}/ --output=../${DEB_SOURCE_PACKAGE}_${UPSTREAMVERSION}.orig.tar.xz origin/master
 fi
+dch -v ${FORCEVERSION}${NEWVERSION} -u medium -D ${DISTRIBUTION} --force-distribution "new upstream snapshot"
+[ $? -ne 0 ] && exit 1
+while read -r line ; do dch -a "${line}" ; done <<< "${CHANGES}"
+debuild -S -sa
 
-ARCHTYPEN="xz:J bz2:j gz:z"
-for archtyp in  ${ARCHTYPEN}
-do
-	arch=`echo $archtyp | cut -d: -f1`
-	pack=`echo $archtyp | cut -d: -f2`
-	DEBSRCPKGFILE="../${DEB_SOURCE_PACKAGE}_${VERSION_FULL}.orig.tar.${arch}"
-	DEBSRCPKGFILEBAK="${DEBSRCPKGFILE}.1"
+OTHERDISTRIBUTION=precise
+OTHERVERSION=${UPSTREAMVERSION}-${SUBVERSION}${BUILDPREFIX}0~${OTHERDISTRIBUTION}
+dch -v ${FORCEVERSION}${OTHERVERSION} --force-bad-version -u medium -D ${OTHERDISTRIBUTION} --force-distribution "rebuild for ${OTHERDISTRIBUTION}"
+while read -r line ; do dch -a "${line}" ; done <<< "${CHANGES}"
+debuild -S -sa
 
-	if [ -f ${DEBSRCPKGFILE} ] ; then
-		mv ${DEBSRCPKGFILE} ${DEBSRCPKGFILEBAK}
-	fi
-
-	if [ -f ${DEBSRCPKGFILE} -o -f ${DEBSRCPKGFILEBAK} ] ; then
-		echo "$DEBSRCPKGFILE or $DEBSRCPKGFILEBAK exists";
-		continue;
-	else
-		echo $DEBSRCPKGFILE
-		tar --exclude=.git --exclude=debian -c${pack}f ${DEBSRCPKGFILE} ${DEB_SOURCE_PACKAGE}
-		rm -rf ${DEB_SOURCE_PACKAGE}
-
-		dch -b -D ${DISTRIBUTION} -v "${VERSION_FULL}-0frodo0~${DISTRIBUTION}" "New upstream snapshot (commit ${GIT_SHA}), build ${GITBUILD}"
-		break;
-	fi
-done
+OTHERDISTRIBUTION=xenial
+OTHERVERSION=${UPSTREAMVERSION}-${SUBVERSION}${BUILDPREFIX}0~${OTHERDISTRIBUTION}
+dch -v ${FORCEVERSION}${OTHERVERSION} --force-bad-version -u medium -D ${OTHERDISTRIBUTION} --force-distribution "rebuild for ${OTHERDISTRIBUTION}"
+while read -r line ; do dch -a "${line}" ; done <<< "${CHANGES}"
+debuild -S -sa
 
 exit 0
